@@ -216,7 +216,23 @@ These thresholds help reduce false positives while maintaining high recall.
 
 ### Architecture
 
-
+```mermaid
+graph TD
+    A[ImprovedEntityDisambiguator] --> B[Query Type Detection]
+    A --> C[Name Part Extraction]
+    A --> D[Matching Strategies]
+    A --> E[Score Combination]
+    
+    C --> C1[First name]
+    C --> C2[Middle names]
+    C --> C3[Last name]
+    C --> C4[Initials]
+    
+    D --> D1[Exact matching]
+    D --> D2[Initial matching]
+    D --> D3[Fuzzy matching for typos]
+    D --> D4[Semantic matching]
+```
 
 ## Future Improvements
 
