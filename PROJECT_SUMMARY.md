@@ -129,6 +129,27 @@ def evaluate_disambiguator(disambiguator, entities, embeddings, test_cases, appr
 - **Purpose**: Comprehensive comparison using flexible implementations
 - **Output**: Side-by-side metrics for all combinations
 
+### 7. `test_middle_names.py`
+- **Purpose**: Initial tests for middle name functionality
+- **Coverage**: Basic middle name matching scenarios
+- **Test Cases**: Verifies that "John Smith" can match "John Michael Smith"
+
+### 8. `test_edge_cases.py`
+- **Purpose**: Tests edge cases and boundary conditions
+- **Coverage**: 
+  - Empty queries
+  - Single character queries
+  - Very long names
+  - Special characters in names
+  - Multiple middle names
+
+### 9. `comprehensive_test.py`
+- **Purpose**: Large-scale testing with expanded entity database
+- **Features**:
+  - 20+ diverse entities including celebrities, scientists, fictional characters
+  - Performance testing with larger datasets
+  - Stress testing search functionality
+
 ## Analysis Scripts
 
 ### 1. `analyze_search_speed.py`
@@ -149,6 +170,35 @@ def evaluate_disambiguator(disambiguator, entities, embeddings, test_cases, appr
 ### 4. `draw_comparison_table.py`
 - **Purpose**: Create visual comparison of baseline vs improved
 - **Format**: ASCII tables with metrics
+
+### 5. `analyze_metrics.py`
+- **Purpose**: Analyze behavior of each approach on specific test cases
+- **Features**:
+  - Shows detailed results for key queries
+  - Helps understand why certain approaches fail
+  - Useful for debugging disambiguation strategies
+
+### 6. `analyze_perfect_f1.py`
+- **Purpose**: Identify which queries achieve perfect F1 scores
+- **Analysis**:
+  - Counts perfect F1 queries per approach
+  - Shows which query types work best
+  - Helps identify areas for improvement
+
+### 7. `explain_metrics.py`
+- **Purpose**: Educational script explaining evaluation metrics
+- **Covers**:
+  - Difference between overall and macro metrics
+  - How precision/recall/F1 are calculated
+  - Why both metrics matter
+
+### 8. `detailed_comparison_table.py`
+- **Purpose**: Generate detailed side-by-side comparisons
+- **Output**: Comprehensive tables showing all metrics and query results
+
+### 9. `results_comparison_table.py`
+- **Purpose**: Create formatted result comparison tables
+- **Features**: Visual comparison of search results across approaches
 
 ## Model Comparison Files
 

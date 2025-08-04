@@ -21,14 +21,22 @@ embeddings/
 │   ├── evaluate_with_middle_names.py            # Comprehensive 20-query evaluation
 │   ├── test_improved_middle_names.py            # Middle name specific tests
 │   ├── evaluate_model_comparison.py             # POTION vs MiniLM comparison
-│   └── flexible_model_comparison.py             # Full model comparison
+│   ├── flexible_model_comparison.py             # Full model comparison
+│   ├── test_middle_names.py                     # Initial middle name tests
+│   ├── test_edge_cases.py                       # Edge case testing
+│   └── comprehensive_test.py                    # Large-scale testing
 │
 ├── Analysis Scripts/
 │   ├── analyze_search_speed.py                  # Timing breakdown by query type
 │   ├── explain_speed_paradox.py                 # Why improved is faster
+│   ├── analyze_metrics.py                       # Behavior analysis per approach
+│   ├── analyze_perfect_f1.py                    # Perfect F1 query analysis
+│   ├── explain_metrics.py                       # Metrics explanation
 │   ├── compare_potion_minilm.py                 # Direct model comparison
 │   ├── final_comparison_table.py                # Generate comparison tables
 │   ├── draw_comparison_table.py                 # ASCII visualization
+│   ├── detailed_comparison_table.py             # Detailed comparisons
+│   ├── results_comparison_table.py              # Result comparison tables
 │   └── final_model_comparison.py                # Publication-ready tables
 │
 ├── Future Extensions/
